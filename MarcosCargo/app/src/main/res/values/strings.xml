@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MarcosCargo</string>
+    <string name="action_settings">Settings</string>
+    <string name="password_format">*** Must contain at least 1 upper-case letter, 1 lower-case letter,   \n    1 number/ special character and be at least 8 characters long</string>
+    <string name="terms_condition">By signing up I agree with the Macos Cargo Terms and Conditions</string>
+    <string name="new_parcel_label">New Parcel</string>
+    <string name="tracking_number_hint">Scan or type tracking number</string>
+    <string name="optional_title">Title(optinal)</string>
+    <string name="pick_up_point_hint">Pick up point</string>
+    <string name="destination_hint">Destination</string>
+    <string name="notes_hint">Summarry</string>
+    <string name="no_item">no cargo</string>
+    <string name="cargo_name">Cargo name</string>
+</resources>

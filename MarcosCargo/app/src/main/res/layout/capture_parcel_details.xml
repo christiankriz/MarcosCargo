@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_close"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/capture_parcel_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/new_parcel_label"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/new_tracking_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/tracking_number_hint"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/new_cargo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/cargo_name"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/message_field_required_error_lbel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_gravity="center"
+            android:textColor="@color/red_500"
+            android:maxLines="1"
+            android:text="*** Message Field is required."
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/new_optional_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/optional_title"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            />
+
+
+        <EditText
+            android:id="@+id/new_pick_up_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/pick_up_point_hint"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            />
+
+
+        <EditText
+            android:id="@+id/new_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/destination_hint"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/new_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/notes_hint"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/carrier_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioGroup
+                android:id="@+id/carrior_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/carrier_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Carrier"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/macos_cargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Macos Cargo"
+                    android:layout_marginLeft="30dp"/>
+
+                <RadioButton
+                    android:id="@+id/ups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPS"
+                    android:layout_marginLeft="30dp" />
+
+                <RadioButton
+                    android:id="@+id/dhl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DHL"
+                    android:layout_marginLeft="30dp" />
+
+                <RadioButton
+                    android:id="@+id/post_office"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Post Office"
+                    android:layout_marginLeft="30dp" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_parcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/submit_button_error_lbel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_gravity="center"
+            android:textColor="@color/red_500"
+            android:maxLines="1"
+            android:text="Please complete all details."
+            android:layout_marginLeft="30dp"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
