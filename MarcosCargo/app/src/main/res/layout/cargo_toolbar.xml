@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lumi_toolbar"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/join_community_label"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".06"
+            android:gravity="center"
+            android:text="Parcels"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/more_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_more_menu"
+            android:scaleType="centerCrop"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:tint="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
