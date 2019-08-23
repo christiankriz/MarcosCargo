@@ -32,6 +32,8 @@ public class CargoItemAdapter extends RealmRecyclerViewAdapter<Cargo, CargoItemA
     View view;
     CargoFeedHolder cargoFeedHolder;
 
+
+
     public CargoItemAdapter(OrderedRealmCollection<Cargo> results, Context context) {
         super(results, true);
         this.results = results;

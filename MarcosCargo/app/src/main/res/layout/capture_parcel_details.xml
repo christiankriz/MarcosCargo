@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/tracking_number_hint"
             android:inputType="textPersonName"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/cargo_name"
             android:inputType="textPersonName"
@@ -172,6 +172,18 @@
 
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/signature_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/iconGray"
+            android:text="@string/sign_btn"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/submit_parcel"
